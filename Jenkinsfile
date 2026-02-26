@@ -1,6 +1,7 @@
 pipeline {
     agent any
     environment {
+        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'f41ec13c-4df1-43d3-b7ea-1ad77d8ff2e0'
         DOCKERHUB_REPO = 'gasdy/otp_week_6'
         DOCKER_IMAGE_TAG = 'latest'
