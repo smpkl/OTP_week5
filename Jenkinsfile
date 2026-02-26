@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                branch: 'main', url: 'https://github.com/smpkl/OTP_week5.git'
+                git branch: 'main', url: 'https://github.com/smpkl/OTP_week5.git'
             }
         }
 
